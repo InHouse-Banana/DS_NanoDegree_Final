@@ -42,11 +42,11 @@ After which the best one was selected and further tuned. The conclusions are bas
 
 Most of the trained models achieved moderate success in predicting churning behaviour, beating the baseline model.
 
-Given the features processed it was found that the best model to further test was the Decision Tree Classifier with an Accuracy: 0.769 and an F-1 Score: 0.734. Using F-1 helped to avoid the pitfall of using accuracy to quantify an imbalanced set.
+Given the features processed it was found that the best model to further test was the Decision Tree Classifier with an Accuracy: 0.769 and an F-1 Score: 0.734 on the test set. Using F-1 helped to avoid the pitfall of using accuracy to quantify an imbalanced set.
 
-Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.718 and F-1 Score: 0.675. Most likely due the small size of the data.
+Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.718 and F-1 Score: 0.675 on the test set. Most likely due the small size of the data.
 
-In terms of the feature importance, the 3 most relevant are, in order, 'lifetime', 'add_friend' and 'total_songs'. Though this might change if the full dataset is used
+In terms of the feature importance, the 3 most relevant, in the default Decision Tree Classifier,  are, in order, 'lifetime', 'add_friend' and 'total_songs'. Though this might change if the full dataset is used
 
 ## Outlook and improvements:
 
