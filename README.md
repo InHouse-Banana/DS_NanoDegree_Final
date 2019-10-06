@@ -1,6 +1,6 @@
 # Data Science NanoDegree Final Project: Sparkify
 
-This is the final project for the Data Science Nanodegree.
+This is the final project for the Data Science Nanodegree. The accompaniying post can be found [here](https://medium.com/@anibal.l.gonzalez.oyarce/sparkify-user-churn-prediction-5cc3580a5ed0).
 
 ## Motivation 
 
