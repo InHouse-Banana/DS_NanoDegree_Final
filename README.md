@@ -44,9 +44,11 @@ In terms of the feature importance, the most relevant are, in order,  'num_thumb
 
 There are several aspects of this analysis that could be expanded and that could change dramatically the outcome. 
 
-1. full dataset: the sample used is a less than 1% of the total dataset (12gb) thus the conclusions showed here are of limited validity
+1. Full dataset: the sample used is a less than 1% of the total dataset (12gb) thus the conclusions showed here are of limited validity
 2. numFolds: related to 1. in this case the number of folds was set to 3, but with larger datasets this could be increased to 10
-3. features: more categorical features could be used
+3. Features: more categorical features could be used
+4. Outlier detection: no efforts were made to detect outliers, which would be important to study in the complete dataset
+5. Imbalance handling: techniques such as  over/under-sampling or different train/test rations could be useful to manage this point
 
 ## Files
 
