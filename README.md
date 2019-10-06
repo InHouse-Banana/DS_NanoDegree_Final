@@ -10,7 +10,11 @@ This repository address the question: given a dataset containing the user activi
 
 Due limited computational resources, only a subset of the total data was used. Though the procedures here described should be valid to the overall dataset.
 
-First of all churn was defined as those users that visited the website: Cancellation Confirmation. With this in mind the original dataset was cleaned and transformed into useful features:
+Exploratory data analysis was performed in term of gender, popular artist, level of account and pages clicked.
+
+Then churn was defined as those users that visited the website: Cancellation Confirmation. With this churn defitino some initial plotting was made in term of gender, level and liftime in the service.
+
+Afterwards, original dataset was cleaned and transformed into useful features:
 
 1. lifetime: time in the service before cancelling 
 2. total_songs: total songs listened
@@ -20,6 +24,8 @@ First of all churn was defined as those users that visited the website: Cancella
 6. add_friend: number of friends added
 7. avg_songs_played: average number of songs listened per session
 8. gender: gender
+
+Resulting in a dataframe with barely 192 full rows/unique accounts.
 
 Then a pipeline was introduced to perform feature scaling (using a standard scaler) and then model fitting using CV without any parameters to try. In this step, he metric used to determine a model's fit was Accuracy and F1, due to the imbalance in the output classes (churned vs not churned)
 
@@ -49,6 +55,7 @@ There are several aspects of this analysis that could be expanded and that could
 3. Features: more categorical features could be used
 4. Outlier detection: no efforts were made to detect outliers, which would be important to study in the complete dataset
 5. Imbalance handling: techniques such as  over/under-sampling or different train/test rations could be useful to manage this point
+6. Missing data imputation: rows/accounts with missing values were deleted, but such values could be inputed in a later study
 
 ## Files
 
