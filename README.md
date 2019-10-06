@@ -40,9 +40,9 @@ After which the best one was selected and further tuned. The conclusions are bas
 
 ## Results 
 
-Given the features processed it was found that the best model to further test was the Logistic Regression with an Accuracy: 0.756 and an F-1 Score:0.734. 
+Given the features processed it was found that the best model to further test was the Logistic Regression with an Accuracy: 0.769 and an F-1 Score: 0.734. 
 
-Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.782 and F-1 Score:0.698. Most likely due the small size of the data.
+Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.718  and F-1 Score: 0.675. Most likely due the small size of the data.
 
 In terms of the feature importance, the 3 most relevant are, in order,  'lifetime', 'add_friend' and 'total_songs'.
 
