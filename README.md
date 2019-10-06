@@ -44,7 +44,7 @@ Given the features processed it was found that the best model to further test wa
 
 Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.782 and F-1 Score:0.698. Most likely due the small size of the data.
 
-In terms of the feature importance, the most relevant are, in order,  'num_thumb_up', 'total_songs',  'lifetime'.
+In terms of the feature importance, the 3 most relevant are, in order,  'lifetime', 'add_friend' and 'total_songs'.
 
 ## Outlook and improvements:
 
