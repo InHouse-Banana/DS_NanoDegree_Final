@@ -12,9 +12,9 @@ Due limited computational resources, only a subset of the total data was used. T
 
 Exploratory data analysis was performed in term of gender, popular artist, level of account and pages clicked.
 
-Then churn was defined as those users that visited the website: Cancellation Confirmation. With this churn defitino some initial plotting was made in term of gender, level and liftime in the service.
+Then churn was defined as those users that visited the website: Cancellation Confirmation. With this churn defition some initial plotting was made in term of gender, level and lifetime in the service.
 
-Afterwards, original dataset was cleaned and transformed into useful features:
+Afterwards, the original dataset was cleaned and transformed into useful features:
 
 1. lifetime: time in the service before cancelling 
 2. total_songs: total songs listened
@@ -29,7 +29,7 @@ Resulting in a dataframe with barely 192 full rows/unique accounts.
 
 Then a pipeline was introduced to perform feature scaling (using a standard scaler) and then model fitting using CV without any parameters to try. In this step, he metric used to determine a model's fit was Accuracy and F1, due to the imbalance in the output classes (churned vs not churned)
 
-The different models tests with their default settings are as follows:
+The different models tested with their default settings are as follows:
 
 1. Logistic Regression
 2. Gradient Boosted Trees
@@ -40,11 +40,13 @@ After which the best one was selected and further tuned. The conclusions are bas
 
 ## Results 
 
-Given the features processed it was found that the best model to further test was the Logistic Regression with an Accuracy: 0.769 and an F-1 Score: 0.734. 
+Most of the trained models achieved moderate success in predicting churning behaviour, beating the baseline model.
 
-Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.718  and F-1 Score: 0.675. Most likely due the small size of the data.
+Given the features processed it was found that the best model to further test was the Decision Tree Classifier with an Accuracy: 0.769 and an F-1 Score: 0.734. Using F-1 helped to avoid the pitfall of using accuracy to quantify an imbalanced set.
 
-In terms of the feature importance, the 3 most relevant are, in order,  'lifetime', 'add_friend' and 'total_songs'.
+Further tuning lead to overfitting in the training set, which lead to Accuracy: 0.718 and F-1 Score: 0.675. Most likely due the small size of the data.
+
+In terms of the feature importance, the 3 most relevant are, in order, 'lifetime', 'add_friend' and 'total_songs'. Though this might change if the full dataset is used
 
 ## Outlook and improvements:
 
